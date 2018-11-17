@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="flex_wrap">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登陆 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='notes'>
+  <navigator url='../addNote/addNote'>
+    <view class='noteItem addbox'>
+       <image src='../../assets/images/add.png'></image>
+    </view>
+    </navigator>
+    <view class='tips'><text>点击这里新增笔记</text> <view class='arrow'></view></view>
+    <view class='noteItem' wx:for="{{NoteList}}" wx:key="index">
+    {{item.title}}
+    </view>
+  </view>
+</view>

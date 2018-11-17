@@ -1,0 +1,81 @@
+/**index.wxss**/
+.flex_wrap{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 100%;
+  min-height:100vh; 
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  height: 100rpx;
+  border-bottom: 1px solid salmon;
+}
+
+.userinfo-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.notes{
+  flex: 1;
+  padding-top: 20rpx;
+  position: relative;
+  display: flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.notes navigator{
+  height: 280rpx;
+}
+.addbox{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.noteItem{
+  width:190rpx;
+  height:260rpx;
+  border:6rpx dotted #d9d9d9;
+  margin: 20rpx;
+}
+.noteItem image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.tips{
+  width: 280rpx;
+  height: 80rpx;
+  background: salmon;
+  position: absolute;
+  left:116rpx;
+  top:254rpx;
+  border-radius: 18rpx;
+  opacity: 0.8;
+  text-align: center;
+}
+.arrow{
+  display: block;
+  width:0;
+  height: 0;
+  position: absolute;
+  border:30rpx solid transparent;
+  border-bottom-color:salmon;
+  left:4rpx;
+  top:-56rpx;
+}
+.tips text{
+  font-size: 30rpx;
+  line-height: 80rpx;
+}

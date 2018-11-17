@@ -1,0 +1,9 @@
+<!--pages/addNote.wxml-->
+<view class='wrap'>
+  <input class='title' placeholder='请输入标题' auto-focus maxlength='30' placeholder-class='tit' bindinput='getTitle'></input>
+  <textarea class='content' cursor-spacing='50' adjust-position='true' placeholder='请输入内容' placeholder-class='txt' bindinput='getContent'></textarea>
+  <view class='save'>
+    <button bindtap='saveNote'>保存</button>
+    <button bindtap='backToIndex'>取消</button>
+  </view>
+</view>
